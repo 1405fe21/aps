@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h2 {
+        color: #333;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+    }
+    .description {
+        margin-bottom: 20px;
+    }
+    .explanation {
+        margin-bottom: 20px;
+    }
+    .complexities {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .complexities th, .complexities td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+    }
+    .complexities th {
+        background-color: #f2f2f2;
+    }
+</style>
+<title>Gale-Shapley Algorithm for Scholarship Matching</title>
+</head>
+<body>
+    <h2>Gale-Shapley Algorithm for Scholarship Matching</h2>
+
+    <div class="description">
+        <p>The Gale-Shapley algorithm, also known as the Deferred Acceptance algorithm, is used to find a stable matching between two sets of elements with preferences for each other. In the context of scholarships and grants on competitive programming websites, it can be applied to match applicants with available scholarships based on mutual preferences, ensuring both parties are satisfied with their matches.</p>
+    </div>
+
+    <div class="explanation">
+        <h3>Explanation</h3>
+        <p>The Gale-Shapley algorithm works by:
+            <ul>
+                <li>Iteratively proposing and accepting/rejecting matches between applicants and scholarships.</li>
+                <li>Each applicant and scholarship maintain preference lists.</li>
+                <li>Ensuring that the resulting match is stable, meaning no applicant and scholarship prefer each other over their current matches.</li>
+            </ul>
+            This approach optimizes the allocation of scholarships based on applicant preferences, promoting fairness and efficiency in the distribution process.</p>
+    </div>
+
+    <h3>Space Complexity</h3>
+    <p>The space complexity of the Gale-Shapley algorithm is <strong>O(n^2)</strong>, where <em>n</em> is the number of applicants or scholarships. This complexity arises from maintaining preference lists and storing current matches.</p>
+
+    <h3>Time Complexity</h3>
+    <table class="complexities">
+        <tr>
+            <th>Operation</th>
+            <th>Time Complexity</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Matching</td>
+            <td>O(n^2)</td>
+            <td>Time complexity for finding a stable matching using the Gale-Shapley algorithm.</td>
+        </tr>
+        <tr>
+            <td>Preference Evaluation</td>
+            <td>O(n^2)</td>
+            <td>Time complexity for evaluating and comparing preferences between applicants and scholarships.</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

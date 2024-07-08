@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h2 {
+        color: #333;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+    }
+    .description {
+        margin-bottom: 20px;
+    }
+    .explanation {
+        margin-bottom: 20px;
+    }
+    .complexities {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .complexities th, .complexities td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+    }
+    .complexities th {
+        background-color: #f2f2f2;
+    }
+</style>
+<title>Gale-Shapley Algorithm for Stable Matching Overview</title>
+</head>
+<body>
+    <h2>Gale-Shapley Algorithm for Stable Matching</h2>
+
+    <div class="description">
+        <p>The Gale-Shapley algorithm, also known as the Deferred Acceptance algorithm, is used to find a stable matching between two sets of elements with preferences for each other. In the context of job placement services, it can be applied to match candidates with job positions based on mutual preferences, ensuring that both parties are satisfied with their matches.</p>
+    </div>
+
+    <div class="explanation">
+        <h3>Explanation</h3>
+        <p>In job placement services, the Gale-Shapley algorithm can efficiently match candidates to job positions based on their preferences and qualifications. Each candidate and job maintains preference lists, and the algorithm iteratively proposes and accepts/rejects matches until a stable matching is achieved where no candidate and job prefer each other over their current matches.</p>
+    </div>
+
+    <h3>Space Complexity</h3>
+    <p>The space complexity of the Gale-Shapley algorithm is <strong>O(n<sup>2</sup>)</strong>, where <em>n</em> is the number of candidates or jobs. This complexity arises from maintaining preference lists and storing current matches.</p>
+
+    <h3>Time Complexities</h3>
+    <table class="complexities">
+        <tr>
+            <th>Case</th>
+            <th>Time Complexity</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Best Case</td>
+            <td>O(n<sup>2</sup>)</td>
+            <td>When implemented with efficient data structures.</td>
+        </tr>
+        <tr>
+            <td>Worst Case</td>
+            <td>O(n<sup>2</sup>)</td>
+            <td>In scenarios where all candidates and jobs need to be evaluated exhaustively.</td>
+        </tr>
+    </table>
+    <h2> <a href="https://github.com/kartikkukreja/blog-codes/blob/master/src/Gale%20Shapley%20Algorithm%20for%20Stable%20Matching%20Problem.cpp" target="_blank">Code </a>.</h2>
+
+</body>
+</html>

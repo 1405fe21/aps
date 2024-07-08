@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h2 {
+        color: #333;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+    }
+    .description {
+        margin-bottom: 20px;
+    }
+    .explanation {
+        margin-bottom: 20px;
+    }
+    .complexities {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .complexities th, .complexities td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+    }
+    .complexities th {
+        background-color: #f2f2f2;
+    }
+</style>
+<title>Suffix Trees for Content Retrieval</title>
+</head>
+<body>
+    <h2>Suffix Trees for Content Retrieval</h2>
+
+    <div class="description">
+        <p>Suffix trees are advanced data structures used for efficient substring search and retrieval within texts. In the context of content licensing on competitive programming websites, suffix trees can be applied to manage and search licensed content quickly based on patterns or substrings.</p>
+    </div>
+
+    <div class="explanation">
+        <h3>Explanation</h3>
+        <p>In competitive programming websites, suffix trees enable efficient management and retrieval of licensed content. They store content in a structured format that allows rapid lookup based on specific patterns or substrings, which is crucial for verifying content usage rights and ensuring compliance with licensing agreements.</p>
+    </div>
+
+    <h3>Space Complexity</h3>
+    <p>The space complexity of a suffix tree constructed from a string of length <em>n</em> is <strong>O(n)</strong>, which is linear relative to the size of the input string.</p>
+
+    <h3>Time Complexity</h3>
+    <table class="complexities">
+        <tr>
+            <th>Operation</th>
+            <th>Time Complexity</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Construction</td>
+            <td>O(n)</td>
+            <td>Time to construct the suffix tree for a string of length <em>n</em>.</td>
+        </tr>
+        <tr>
+            <td>Search Operation</td>
+            <td>O(m)</td>
+            <td>Time to search for a pattern of length <em>m</em> in the suffix tree.</td>
+        </tr>
+    </table>
+    <h2> <a href="https://github.com/Rerito/suffix-tree/blob/master/suffixtree.h" target="_blank">Code </a>.</h2>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h2 {
+        color: #333;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+    }
+    .description {
+        margin-bottom: 20px;
+    }
+    .explanation {
+        margin-bottom: 20px;
+    }
+    .complexities {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .complexities th, .complexities td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+    }
+    .complexities th {
+        background-color: #f2f2f2;
+    }
+</style>
+<title>Priority Queue Overview</title>
+</head>
+<body>
+    <h2>Priority Queue</h2>
+
+    <div class="description">
+        <p>A Priority Queue is a data structure that manages a set of elements with associated priorities. It allows efficient insertion of elements with their priorities and retrieval of the highest (or lowest) priority element.</p>
+    </div>
+
+    <div class="explanation">
+        <h3>Explanation</h3>
+        <p>In the context of scheduling examination slots, a Priority Queue can be used to manage and prioritize available slots based on criteria such as exam timing, availability of exam proctors, or user preferences. Each examination slot can be represented as an element in the priority queue with its associated priority (e.g., earliest available slot).</p>
+        <p>Using a Priority Queue ensures that examination slots are efficiently managed and allocated according to predefined criteria or user requirements. It allows for quick retrieval of the next available slot or the slot with the highest priority (e.g., closest to the user's preferred time), optimizing the scheduling process on competitive programming websites.</p>
+    </div>
+
+    <h3>Space Complexity</h3>
+    <p>The space complexity of a Priority Queue typically ranges from <strong>O(n)</strong> to <strong>O(k)</strong>, where <em>n</em> is the number of elements currently in the queue, and <em>k</em> is the capacity of the queue.</p>
+
+    <h3>Time Complexities</h3>
+    <table class="complexities">
+        <tr>
+            <th>Operation</th>
+            <th>Time Complexity</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Insert</td>
+            <td>O(log n)</td>
+            <td>Inserting an element into the priority queue.</td>
+        </tr>
+        <tr>
+            <td>Extract-Min/Max</td>
+            <td>O(log n)</td>
+            <td>Removing and returning the highest (or lowest) priority element from the priority queue.</td>
+        </tr>
+        <tr>
+            <td>Peek</td>
+            <td>O(1)</td>
+            <td>Accessing the highest (or lowest) priority element without removing it.</td>
+        </tr>
+    </table>
+    <h2> <a href="https://github.com/yazanobeidi/priority-queue/blob/master/priority_queue.cpp" target="_blank">Code </a>.</h2>
+
+</body>
+</html>

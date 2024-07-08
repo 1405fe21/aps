@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h2 {
+        color: #333;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+    }
+    .description {
+        margin-bottom: 20px;
+    }
+    .explanation {
+        margin-bottom: 20px;
+    }
+    .complexities {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .complexities th, .complexities td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+    }
+    .complexities th {
+        background-color: #f2f2f2;
+    }
+</style>
+<title>Network Flow Algorithms for Team Formation</title>
+</head>
+<body>
+    <h2>Network Flow Algorithms for Team Formation</h2>
+
+    <div class="description">
+        <p>Network flow algorithms are used to find the maximum flow in a flow network, which can be applied to optimize team formation in hackathon hosting services on competitive programming websites. It ensures that teams are formed optimally based on criteria such as skill compatibility, project requirements, and participant preferences.</p>
+    </div>
+
+    <div class="explanation">
+        <h3>Explanation</h3>
+        <p>In hackathon hosting services, network flow algorithms facilitate the formation of teams by maximizing the overall skill level or project fit within each team. This optimization process considers various constraints and preferences to ensure that each team is balanced and capable of producing high-quality projects.</p>
+    </div>
+
+    <h3>Space Complexity</h3>
+    <p>The space complexity of network flow algorithms depends on the specific algorithm used, typically ranging from <strong>O(V + E)</strong> to <strong>O(V^2)</strong>, where <em>V</em> is the number of vertices and <em>E</em> is the number of edges in the flow network.</p>
+
+    <h3>Time Complexity</h3>
+    <table class="complexities">
+        <tr>
+            <th>Operation</th>
+            <th>Time Complexity</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Ford-Fulkerson Method</td>
+            <td>O(E * |f|)</td>
+            <td>Time complexity of the Ford-Fulkerson method for finding maximum flow in a flow network.</td>
+        </tr>
+        <tr>
+            <td>Edmonds-Karp Algorithm</td>
+            <td>O(V * E^2)</td>
+            <td>Improved implementation using BFS for shortest augmenting paths.</td>
+        </tr>
+    </table>
+    <h2> <a href="https://github.com/prabod/Graph-Theory-Ford-Fulkerson-Maximum-Flow" target="_blank">Code </a>.</h2>
+</body>
+</html>

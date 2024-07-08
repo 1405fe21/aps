@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h2 {
+        color: #333;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+    }
+    .description {
+        margin-bottom: 20px;
+    }
+    .explanation {
+        margin-bottom: 20px;
+    }
+    .complexities {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .complexities th, .complexities td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+    }
+    .complexities th {
+        background-color: #f2f2f2;
+    }
+</style>
+<title>Hashing for Sponsor Matching and Retrieval Overview</title>
+</head>
+<body>
+    <h2>Hashing for Sponsor Matching and Retrieval</h2>
+
+    <div class="description">
+        <p>Hashing is a technique used to map data of arbitrary size to fixed-size values, typically for quick retrieval of information. In the context of competitive programming websites, hashing can be used to store and retrieve sponsor information efficiently based on key attributes such as sponsor name or sponsorship level.</p>
+    </div>
+
+    <div class="explanation">
+        <h3>Explanation</h3>
+        <p>Hashing can efficiently manage and retrieve sponsor information on competitive programming websites. Each sponsor's details (such as name, contact information, sponsorship level) can be hashed into a hash table. This allows quick access to sponsor details when needed, facilitating fast matching and retrieval for partnership management.</p>
+    </div>
+
+    <h3>Space Complexity</h3>
+    <p>The space complexity of hashing generally depends on the number of entries (or sponsors) and the underlying hash table implementation. It is typically <strong>O(n)</strong>, where <em>n</em> is the number of entries.</p>
+
+    <h3>Time Complexities</h3>
+    <table class="complexities">
+        <tr>
+            <th>Operation</th>
+            <th>Time Complexity</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Insertion</td>
+            <td>O(1)</td>
+            <td>Inserting an element into the hash table.</td>
+        </tr>
+        <tr>
+            <td>Search/Retrieval</td>
+            <td>O(1)</td>
+            <td>Retrieving sponsor information based on the hashed key.</td>
+        </tr>
+    </table>
+    <h2> <a href="https://gist.github.com/aozturk/2368896" target="_blank">Code </a>.</h2>
+</body>
+</html>

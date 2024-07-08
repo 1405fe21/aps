@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h2 {
+        color: #333;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+    }
+    .description {
+        margin-bottom: 20px;
+    }
+    .explanation {
+        margin-bottom: 20px;
+    }
+    .complexities {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .complexities th, .complexities td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+    }
+    .complexities th {
+        background-color: #f2f2f2;
+    }
+</style>
+<title>Union-Find for Community Contributions</title>
+</head>
+<body>
+    <h2>Union-Find for Community Contributions</h2>
+
+    <div class="description">
+        <p>Union-Find, also known as Disjoint Set Union (DSU), is a data structure used to manage and efficiently operate on disjoint sets. In the context of community contributions on competitive programming websites, Union-Find can be employed to track and manage relationships between contributors and contributions.</p>
+    </div>
+
+    <div class="explanation">
+        <h3>Explanation</h3>
+        <p>Union-Find data structure supports two primary operations:
+            <ul>
+                <li><strong>Union</strong>: Merge two sets into a single set.</li>
+                <li><strong>Find</strong>: Determine the set to which a particular element belongs.</li>
+            </ul>
+            This makes it ideal for tracking relationships and connectivity among community members or contributions. For example, it can be used to determine if two contributors have collaborated on projects or if multiple contributions are related to the same topic or task.</p>
+    </div>
+
+    <h3>Space Complexity</h3>
+    <p>The space complexity of Union-Find is <strong>O(n)</strong>, where <em>n</em> is the number of elements (contributors or contributions).</p>
+
+    <h3>Time Complexity</h3>
+    <table class="complexities">
+        <tr>
+            <th>Operation</th>
+            <th>Time Complexity</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Union</td>
+            <td>O(α(n))</td>
+            <td>Amortized time complexity, where α is the inverse Ackermann function, providing nearly constant time.</td>
+        </tr>
+        <tr>
+            <td>Find</td>
+            <td>O(α(n))</td>
+            <td>Amortized time complexity for finding the root of the set containing a specific element.</td>
+        </tr>
+    </table>
+    <h2> <a href="https://github.com/rabiulcste/graph-theory/blob/master/Union-Find%20(Disjoint%20sets%20data%20structure).cpp" target="_blank">Code </a>.</h2>
+
+</body>
+</html>

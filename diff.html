@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h2 {
+        color: #333;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+    }
+    .description {
+        margin-bottom: 20px;
+    }
+    .explanation {
+        margin-bottom: 20px;
+    }
+    .complexities {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .complexities th, .complexities td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+    }
+    .complexities th {
+        background-color: #f2f2f2;
+    }
+</style>
+<title>Quick Sort Algorithm for Sorting Problems by Difficulty</title>
+</head>
+<body>
+    <h2>Quick Sort Algorithm for Sorting Problems by Difficulty</h2>
+
+    <div class="description">
+        <p>Quick Sort is an efficient, in-place sorting algorithm that uses a divide-and-conquer approach. It works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. The sub-arrays are then sorted recursively.</p>
+    </div>
+
+    <div class="explanation">
+        <h3>Explanation</h3>
+        <p>The Quick Sort algorithm operates as follows:
+            <ul>
+                <li>Select a pivot element from the array.</li>
+                <li>Partition the other elements into sub-arrays based on their comparison with the pivot.</li>
+                <li>Recursively sort the sub-arrays.</li>
+            </ul>
+            This approach is particularly well-suited for sorting problems based on difficulty rating due to its average-case time complexity and in-place sorting capabilities.</p>
+    </div>
+
+    <h3>Space Complexity</h3>
+    <p>The space complexity of Quick Sort is <strong>O(log n)</strong> due to the stack space used by the recursive calls.</p>
+
+    <h3>Time Complexity</h3>
+    <table class="complexities">
+        <tr>
+            <th>Operation</th>
+            <th>Time Complexity</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Best Case</td>
+            <td>O(n log n)</td>
+            <td>Occurs when the pivot divides the array into two nearly equal halves.</td>
+        </tr>
+        <tr>
+            <td>Average Case</td>
+            <td>O(n log n)</td>
+            <td>Expected time complexity for random pivot selections.</td>
+        </tr>
+        <tr>
+            <td>Worst Case</td>
+            <td>O(n^2)</td>
+            <td>Occurs when the smallest or largest element is always chosen as the pivot.</td>
+        </tr>
+    </table>
+
+</body>
+</html>

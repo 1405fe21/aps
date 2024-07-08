@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h2 {
+        color: #333;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+    }
+    .description {
+        margin-bottom: 20px;
+    }
+    .explanation {
+        margin-bottom: 20px;
+    }
+    .complexities {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .complexities th, .complexities td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+    }
+    .complexities th {
+        background-color: #f2f2f2;
+    }
+</style>
+<title>Hash Tables for Link Management</title>
+</head>
+<body>
+    <h2>Hash Tables for Link Management</h2>
+
+    <div class="description">
+        <p>Hash tables (or hash maps) are data structures that provide efficient insertion, deletion, and lookup operations. In the context of affiliate marketing on competitive programming websites, hash tables can be utilized to store and retrieve affiliate links quickly based on unique identifiers or keys.</p>
+    </div>
+
+    <div class="explanation">
+        <h3>Explanation</h3>
+        <p>In competitive programming websites, hash tables enable efficient management of affiliate links. Each affiliate link, along with its associated metadata such as affiliate ID and product information, can be stored in a hash table. This allows rapid retrieval when users click on affiliate-marked content, enhancing user experience and operational efficiency.</p>
+    </div>
+
+    <h3>Space Complexity</h3>
+    <p>The space complexity of hash tables depends on the number of entries stored but is typically <strong>O(n)</strong>, where <em>n</em> is the number of entries (affiliate links).</p>
+
+    <h3>Time Complexity</h3>
+    <table class="complexities">
+        <tr>
+            <th>Operation</th>
+            <th>Time Complexity</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Insert Operation</td>
+            <td>O(1)</td>
+            <td>Average case for inserting an affiliate link into the hash table.</td>
+        </tr>
+        <tr>
+            <td>Search/Retrieval Operation</td>
+            <td>O(1)</td>
+            <td>Average case for retrieving an affiliate link based on its key.</td>
+        </tr>
+    </table>
+    <h2> <a href="https://gist.github.com/aozturk/2368896" target="_blank">Code </a>.</h2>
+</body>
+</html>

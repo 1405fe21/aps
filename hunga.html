@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h2 {
+        color: #333;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+    }
+    .description {
+        margin-bottom: 20px;
+    }
+    .explanation {
+        margin-bottom: 20px;
+    }
+    .complexities {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .complexities th, .complexities td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+    }
+    .complexities th {
+        background-color: #f2f2f2;
+    }
+</style>
+<title>Hungarian Algorithm for Resource Allocation</title>
+</head>
+<body>
+    <h2>Hungarian Algorithm for Resource Allocation</h2>
+
+    <div class="description">
+        <p>The Hungarian algorithm, also known as the Kuhn-Munkres algorithm, is used to find the optimal assignment of resources to tasks or agents to jobs in bipartite graphs. In the context of educational collaborations on competitive programming websites, it can efficiently allocate educational resources such as mentors, courses, or facilities to participants or teams.</p>
+    </div>
+
+    <div class="explanation">
+        <h3>Explanation</h3>
+        <p>In educational collaborations on competitive programming websites, the Hungarian algorithm ensures that resources are assigned in a way that maximizes overall educational benefit or minimizes costs, depending on the defined objective function. It optimizes resource allocation by considering preferences and constraints, enhancing the efficiency of educational initiatives.</p>
+    </div>
+
+    <h3>Space Complexity</h3>
+    <p>The space complexity of the Hungarian algorithm is <strong>O(n<sup>2</sup>)</strong>, where <em>n</em> is the number of rows or columns in the cost matrix representing the bipartite graph.</p>
+
+    <h3>Time Complexity</h3>
+    <table class="complexities">
+        <tr>
+            <th>Operation</th>
+            <th>Time Complexity</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Basic Implementation</td>
+            <td>O(n<sup>3</sup>)</td>
+            <td>Time complexity of the Hungarian algorithm using the basic implementation.</td>
+        </tr>
+        <tr>
+            <td>Efficient Implementations</td>
+            <td>O(n<sup>2.5</sup>)</td>
+            <td>More efficient implementations reduce the time complexity to O(n<sup>2.5</sup>), making it feasible for larger datasets.</td>
+        </tr>
+    </table>
+    <h2> <a href="https://github.com/mcximing/hungarian-algorithm-cpp" target="_blank">Code </a>.</h2>
+</body>
+</html>

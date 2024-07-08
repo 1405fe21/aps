@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h2 {
+        color: #333;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+    }
+    .description {
+        margin-bottom: 20px;
+    }
+    .explanation {
+        margin-bottom: 20px;
+    }
+    .complexities {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .complexities th, .complexities td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+    }
+    .complexities th {
+        background-color: #f2f2f2;
+    }
+</style>
+<title>DFS for Personalized Learning Paths</title>
+</head>
+<body>
+    <h2>DFS for Personalized Learning Paths</h2>
+
+    <div class="description">
+        <p>Depth-first search (DFS) is an algorithm used to traverse or search tree or graph data structures. In the context of personalized learning paths on competitive programming websites, DFS can be employed to explore and recommend optimal learning paths based on user preferences, skills, and current knowledge.</p>
+    </div>
+
+    <div class="explanation">
+        <h3>Explanation</h3>
+        <p>DFS allows competitive programming websites to personalize learning experiences by navigating through available learning modules or courses. It starts at the initial learning topic chosen by the user and explores deeper into related topics, recursively finding the most relevant paths based on predefined criteria or user input.</p>
+    </div>
+
+    <h3>Space Complexity</h3>
+    <p>The space complexity of DFS is <strong>O(V)</strong>, where <em>V</em> is the number of vertices (topics or nodes) in the graph representing learning paths.</p>
+
+    <h3>Time Complexity</h3>
+    <table class="complexities">
+        <tr>
+            <th>Operation</th>
+            <th>Time Complexity</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Traversal</td>
+            <td>O(V + E)</td>
+            <td>Where <em>V</em> is the number of vertices and <em>E</em> is the number of edges in the graph.</td>
+        </tr>
+        <tr>
+            <td>Recommendation</td>
+            <td>O(V)</td>
+            <td>Generating personalized learning paths based on DFS traversal.</td>
+        </tr>
+    </table>
+    <h2> <a href="https://gist.github.com/zayednews/79075e93e54c3a95e3e555085bd03836" target="_blank">Code </a>.</h2>
+
+</body>
+</html>
